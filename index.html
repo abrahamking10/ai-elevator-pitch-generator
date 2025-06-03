@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="DataContainer">
+        <h1>Mini Resume Generator</h1>
+
+        <h4>Name</h4>
+        <input type="text" placeholder="First & Last Name" id="name">
+        <h4>Skill (Separate using commas (,) if you have multiple)</h4>
+        <input type="text" placeholder="Your Skill" id="skill">
+        <h4>Experience (Include 'years'/'months')</h4>
+        <input type="text" placeholder="Experience" id="experience">
+        <h4>Education (College, Past companies, etc. Optional)</h4>
+        <input type="text" placeholder="Education" id="education">
+        <h4>Tone (Professional, Playful, etc.)</h4>
+        <select name="toneDropdown" id="tone" style="width: 8rem;">
+            <option value="Formal">Formal💼</option>
+            <option value="Casual">Casual😎</option>
+            <option value="Playful">Playful😜</option>
+            <option value="Technical">Technical💻</option>
+            <option value="Academic">Academic🧠</option>
+            <option value="Humorous">Humorous😂</option>
+            <option value="Dramatic">Dramatic🎩</option>
+        </select>
+        <h4>Max Characters (Max 1500)</h4>
+        <input type="number" placeholder="Characters" id="character_count">
+        <br>
+        <br>
+        <button id="generateBtn" onclick="getData()">Generate Resume</button>
+    </div>
+    <div class="OutputContainer">
+        <h1>AI Output</h1>
+        <div id="resume-output">Your AI generated resume here.</div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

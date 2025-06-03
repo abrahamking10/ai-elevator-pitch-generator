@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Poppins;
+    src: url(Fonts/Poppins-SemiBold.ttf);
+}
+
+body, html {
+    height: auto; /* ⛔ Don't lock height */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-family: Poppins;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+input, select{
+    background-color: rgb(236, 236, 236);
+    width: 12rem;
+    height: 1.6rem;
+    border-radius: 10px;
+    padding-left: 8px;
+    outline: none;
+    border: none;
+    font-family: Poppins;
+}
+
+#generateBtn{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: black;
+    background-color: rgb(223, 223, 223);
+    font-family: Poppins;
+    cursor: pointer;
+}
+
+#generateBtn:hover{
+    background-color: rgb(196, 196, 196);
+    transition: all 0.3s;
+}
+
+.DataContainer{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 40vw;
+    min-width: 20rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.OutputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    max-width: 60vw;  /* ✅ Responsive width */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#resume-output {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(100, 100, 100);
+    color: rgb(121, 121, 121);
+    border-radius: 10px;
+    padding: 10px;
+
+    width: 100%;
+    max-width: 50rem; /* ✅ Base max width */
+    min-width: 20rem; /* ✅ Minimum width before it breaks */
+    max-height: 35rem;
+    min-height: 20rem;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+#resume-output::-webkit-scrollbar {
+display: none;
+}
+
+@media (max-width: 700px) {
+    body {
+        flex-direction: column;
+    }
+}
